@@ -17,14 +17,14 @@ const pkgdef :Spk.PackageDefinition = (
     # This manifest is included in your app package to tell Sandstorm
     # about your app.
 
-    appVersion = 201606120,  # Increment this for every release.
-    appTitle = (defaultText = "EtherCalc"),
-    appMarketingVersion = (defaultText = "2016.06.12.0"),
+    appVersion = 201701170,  # Increment this for every release.
+    appTitle = (defaultText = "LinksHolder"),
+    appMarketingVersion = (defaultText = "2017.01.17.0"),
 
     actions = [
       # Define your "new document" handlers here.
-      ( title = (defaultText = "New EtherCalc Spreadsheet"),
-        nounPhrase = (defaultText = "spreadsheet"),
+      ( title = (defaultText = "New Holder"),
+        nounPhrase = (defaultText = "holder"),
         command = .myContinueCommand
         # The command to run when starting for the first time. (".myCommand"
         # is just a constant defined at the bottom of the file.)
@@ -62,7 +62,7 @@ const pkgdef :Spk.PackageDefinition = (
       shortDescription = (defaultText = "Multi-user Spreadsheet"),
 
       screenshots = [
-        (width = 478, height = 298, png = embed "static/img/davy/gfx/screenshot.png")
+        (width = 478, height = 298, png = embed "../static/img/davy/gfx/screenshot.png")
       ],
 
       changeLog = (defaultText = embed "CHANGELOG.mkdn"),
@@ -113,7 +113,7 @@ const pkgdef :Spk.PackageDefinition = (
 
 const myContinueCommand :Spk.Manifest.Command = (
   # Here we define the command used to start up your server.
-  argv = ["/sandstorm-http-bridge", "33411", "--", "./run_grain.sh"],
+  argv = ["/sandstorm-http-bridge", "33411", "--", "/opt/app/.sandstorm/launcher.sh"],
   environ = [
     # Note that this defines the *entire* environment seen by your app.
     (key = "PATH", value = "/usr/local/bin:/usr/bin:/bin")
