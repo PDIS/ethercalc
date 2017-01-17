@@ -3,9 +3,13 @@
 # the app runs in dev mode. You may manually add or remove files, but don't
 # expect comments or ordering to be retained.
 bin/bash
+bin/cat
 bin/cp
 bin/dash
+bin/date
+bin/grep
 bin/sh
+bin/uname
 etc/gai.conf
 etc/host.conf
 etc/hosts
@@ -70,6 +74,7 @@ opt/app/hackfoldr/assets/tabletop/tabletop.js
 opt/app/hackfoldr/css/global.css
 opt/app/hackfoldr/index.html
 opt/app/hackfoldr/js/index.js
+opt/app/hackfoldr/js/test.js
 opt/app/images/sc_1x1.gif
 opt/app/images/sc_aligncenter.png
 opt/app/images/sc_alignleft.png
@@ -97,6 +102,7 @@ opt/app/images/sc_insertcolumns.png
 opt/app/images/sc_insertformula.png
 opt/app/images/sc_inserthyperlink.png
 opt/app/images/sc_insertrows.png
+opt/app/images/sc_less-hh.gif
 opt/app/images/sc_less-hn.gif
 opt/app/images/sc_less-vn.gif
 opt/app/images/sc_listbox.png
@@ -615,6 +621,19 @@ opt/app/node_modules/zappajs/vendor/socket.io.js
 opt/app/player-broadcast.js
 opt/app/player-graph.js
 opt/app/player.js
+opt/app/redis-stable
+opt/app/redis-stable/Makefile
+opt/app/redis-stable/deps/geohash-int
+opt/app/redis-stable/deps/hiredis
+opt/app/redis-stable/deps/linenoise
+opt/app/redis-stable/deps/lua/src
+opt/app/redis-stable/src
+opt/app/redis-stable/src/.make-prerequisites
+opt/app/redis-stable/src/.make-settings
+opt/app/redis-stable/src/Makefile
+opt/app/redis-stable/src/Makefile.dep
+opt/app/redis-stable/src/mkreleasehdr.sh
+opt/app/redis-stable/src/release.h
 opt/app/sc.js
 opt/app/src
 opt/app/static/download.png
@@ -638,9 +657,11 @@ sandstorm-http-bridge
 sandstorm-http-bridge-config
 sandstorm-manifest
 usr/bin/env
+usr/bin/head
 usr/bin/make
 usr/bin/node
 usr/bin/nodejs
+usr/bin/wc
 usr/lib/libv8.so.3.14.5
 usr/lib/x86_64-linux-gnu/libcares.so.2
 usr/lib/x86_64-linux-gnu/libcares.so.2.1.0

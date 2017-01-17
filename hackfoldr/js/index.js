@@ -1,15 +1,24 @@
-
-
+// console.log("Getting CSV...");
+// $.ajax('./sheet1.csv', {
+//     success: function (data) {
+//         console.log("GET DATA");
+//         console.log(data);
+//     }
+//     , error: function (error) {
+//         console.log("ERROR");
+//         console.log(error);
+//     }
+// });
 
 // prepare to handle url
 var paths = location.pathname.split('/') || [];
-var ethercalc_name     = paths[1] || "___DEFAULT_ETHERCALC_PATH___";
+var ethercalc_name = 'internal';
 var current_iframe_url = paths[2] ? unescape(unescape(paths[2])) : null;
 var history_state={};
 // prepare to handle backend data (from ethercalc or google spreadsheet)
 var csv_api_source = "";
 var csv_api_source_type = "";
-var csv_api_source_id = ethercalc_name;
+var csv_api_source_id = 'sheet1';
 // prepare to accept foldr options set in ethercalc
 var hide_sheet = false;
 var sort_sheet = true;
@@ -21,20 +30,13 @@ var foldr_histories = JSON.parse(localStorage.getItem("hackfoldr")) || [];
 var foldr_scale = JSON.parse(localStorage.getItem("hackfoldr-scale")) || "";
 
 // check where the csv will come from, ethercalc or gsheet?
-if(ethercalc_name.length < 40){
-  csv_api_source = 'https://ethercalc.org/_/'+ethercalc_name+'/csv';
-  csv_api_source_type = "ethercalc";
-}else{
-  csv_api_source = 'docs.google.com/feeds/download/spreadsheets/Export?key='+ethercalc_name+'&exportFormat=csv&gid=0';
-  csv_api_source_type = "google";
-  // because posting to gsheet is hard to implement, we don't offer submit feature when using gsheet. since it's easy to moderate editing in gsheet, you can just let users edit or comment on it.
-  $("#topbar .add.to.list, #topbar .submit.segment").remove();
-};
+csv_api_source = './sheet1.csv';
+csv_api_source_type = "ethercalc";
 
 // let user sort #toc menu by drag and drop, a very user friendly feature suggest by @ipa. using jquery ui sortable. (also, ethercalc only)
 var sort_ethercalc = function(sort_initial_row, sort_target_row){
   $.ajax({
-    url: "https://ethercalc.org/_/"+ethercalc_name,
+    url: './sheet1.csv',
     contentType: 'text/plain',
     data: 'moveinsert A'+sort_initial_row+':F'+sort_initial_row+' A'+sort_target_row,
     type: 'POST',

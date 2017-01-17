@@ -29,5 +29,8 @@ set -euo pipefail
 # By default, this script does nothing.  You'll have to modify it as
 # appropriate for your application.
 cd /opt/app
+# cd redis-stable
+# make
+# cd ..
 export PORT=33411
 make ETHERCALC_ARGS=--vm

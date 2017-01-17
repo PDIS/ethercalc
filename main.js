@@ -37,7 +37,6 @@
     sendFile = function(file){
       return function(){
         this.response.type(Html);
-        console.log("p="+RealBin + "/" + file);
         return this.response.sendfile(RealBin + "/" + file);
       };
     };
@@ -399,7 +398,6 @@
     this.get({
       '/:room': function(){
         var uiFile, ref$, ref1$;
-        console.log("room="+this.params.room);
         uiFile = 'hackfoldr/index.html';
         // uiFile = /^=/.exec(this.params.room) ? 'multi/index.html' : 'index.html';
         if (!/modify/.test(this.request.get('x-sandstorm-permissions')) && !((ref$ = this.query.auth) != null && ref$.length)) {

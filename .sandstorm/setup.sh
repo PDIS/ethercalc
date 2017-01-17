@@ -30,6 +30,12 @@ apt install -y npm
 cd /opt/app
 npm i
 
+# apt install -y tcl
+# wget http://download.redis.io/redis-stable.tar.gz
+# tar xvzf redis-stable.tar.gz
+# cd redis-stable
+# make
+
 cp /opt/app/dump.json /var/dump.json
 export PORT=33411
 
