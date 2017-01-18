@@ -1,4 +1,4 @@
 /node_modules/
 /dump.json
 *.swp
-pgp*
+.sandstorm/pgp-*
