@@ -1,0 +1,1 @@
+const READ_ONLY = true;

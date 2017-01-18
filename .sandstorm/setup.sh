@@ -25,6 +25,7 @@ set -euo pipefail
 
 apt update
 apt install -y nodejs
+rm -f /usr/bin/node
 ln -s `which nodejs` /usr/bin/node
 apt install -y npm
 cd /opt/app
