@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/main.js" line="156" />
+    <bookmark url="file://$PROJECT_DIR$/main.js" line="416" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="11b658c1-403b-483d-a4a9-13389b831ad0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackfoldr/index_readonly.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackfoldr/js/config.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sandstorm/app-graphics/ethercalc-128.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sandstorm/app-graphics/ethercalc-150.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sandstorm/app-graphics/ethercalc-24.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.sandstorm/sandstorm-pkgdef.capnp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sandstorm/pgp-keyring" afterPath="$PROJECT_DIR$/.sandstorm/pgp-keyring" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sandstorm/pgp-signature" afterPath="$PROJECT_DIR$/.sandstorm/pgp-signature" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackfoldr/redirect.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/linksholder.spk" afterPath="$PROJECT_DIR$/linksholder.spk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sandstorm/sandstorm-files.list" afterPath="$PROJECT_DIR$/.sandstorm/sandstorm-files.list" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sandstorm/sandstorm-pkgdef.capnp" afterPath="$PROJECT_DIR$/.sandstorm/sandstorm-pkgdef.capnp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sandstorm/setup.sh" afterPath="$PROJECT_DIR$/.sandstorm/setup.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackfoldr/index.html" afterPath="$PROJECT_DIR$/hackfoldr/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackfoldr/js/index.js" afterPath="$PROJECT_DIR$/hackfoldr/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -37,8 +35,28 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+            <state relative-caret-position="162">
+              <caret line="429" column="32" lean-forward="false" selection-start-line="429" selection-start-column="32" selection-end-line="429" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sandstorm-pkgdef.capnp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.sandstorm/sandstorm-pkgdef.capnp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="69" column="6" lean-forward="true" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="redirect.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hackfoldr/redirect.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -47,51 +65,22 @@
       <file leaf-file-name="index_readonly.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackfoldr/index_readonly.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="134" column="10" lean-forward="false" selection-start-line="134" selection-start-column="10" selection-end-line="134" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackfoldr/js/config.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackfoldr/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="727" column="49" lean-forward="false" selection-start-line="727" selection-start-column="49" selection-end-line="727" selection-end-column="49" />
+            <state relative-caret-position="36">
+              <caret line="2" column="39" lean-forward="true" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
               <folding>
-                <marker date="1484730340134" expanded="true" signature="13623:13637" ph="..." />
+                <marker date="1485230854188" expanded="false" signature="0:3" ph="//..." />
+                <marker date="1485230854188" expanded="true" signature="13515:13529" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sandstorm-pkgdef.capnp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.sandstorm/sandstorm-pkgdef.capnp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="78" column="8" lean-forward="true" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -99,11 +88,21 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackfoldr/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="68" column="13" lean-forward="false" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+            <state relative-caret-position="172">
+              <caret line="83" column="143" lean-forward="false" selection-start-line="83" selection-start-column="143" selection-end-line="83" selection-end-column="143" />
               <folding>
-                <element signature="e#4570#4576#1" expanded="true" />
+                <element signature="e#4476#4482#1" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.sandstorm/setup.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,41 +113,42 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.post</find>
-      <find>ethercalc.org</find>
-      <find>更新</find>
-      <find>.refresh</find>
-      <find>icon</find>
-      <find>popup</find>
-      <find>hackpad</find>
-      <find>auth=0</find>
-      <find>room=</find>
-      <find>sandstorm-permissions</find>
-      <find>KEY =</find>
-      <find>.edit</find>
-      <find>.edit.table</find>
-      <find>permission</find>
-      <find>edit</find>
-      <find>/edit</find>
-      <find>hmac =</find>
-      <find>sendFile =</find>
-      <find>$(&quot;#topbar .edit.table&quot;)</find>
-      <find>your</find>
-      <find>your_</find>
-      <find>history</find>
-      <find>__YOUR</find>
-      <find>https://github.com/PDIS/ethercalc</find>
-      <find>welcome-to</find>
-      <find>說明</find>
-      <find>keyring</find>
-      <find>pgp</find>
-      <find>pgp-keyring</find>
       <find>Untitled</find>
+      <find>screen</find>
+      <find>frame</find>
+      <find>pgp</find>
+      <find>include</find>
+      <find>:room</find>
+      <find>_start</find>
+      <find>hackfoldr</find>
+      <find>./hackfoldr/</find>
+      <find>csv_api</find>
+      <find>ExportCSV =</find>
+      <find>ExportCSV</find>
+      <find>('shee</find>
+      <find>/hackfoldr/</find>
+      <find>&quot;/</find>
+      <find>api =</find>
+      <find>exportCSV</find>
+      <find>SC =</find>
+      <find>iframe</find>
+      <find>_blank</find>
+      <find>link_target</find>
+      <find>[0</find>
+      <find>initial</find>
+      <find>frame_src</find>
+      <find>google.com</find>
+      <find>link_icon</find>
+      <find>.edit</find>
+      <find>topbar</find>
+      <find>add</find>
+      <find>.edit.table</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,17 +160,20 @@
         <option value="$PROJECT_DIR$/sandstorm-pkgdef.capnp" />
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/test.js" />
-        <option value="$PROJECT_DIR$/.sandstorm/launcher.sh" />
         <option value="$PROJECT_DIR$/hackfoldr/js/test.js" />
-        <option value="$PROJECT_DIR$/.sandstorm/setup.sh" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/hackfoldr/index_readonly.html" />
         <option value="$PROJECT_DIR$/hackfoldr/js/config.js" />
-        <option value="$PROJECT_DIR$/main.js" />
-        <option value="$PROJECT_DIR$/hackfoldr/js/index.js" />
-        <option value="$PROJECT_DIR$/hackfoldr/index.html" />
         <option value="$PROJECT_DIR$/.sandstorm/origin-sandstorm-pkgdef.capnp" />
+        <option value="$PROJECT_DIR$/.sandstorm/launcher.sh" />
+        <option value="$PROJECT_DIR$/sandstorm-integration/getPublicId.c++" />
+        <option value="$PROJECT_DIR$/sandstorm-integration/Makefile" />
         <option value="$PROJECT_DIR$/.sandstorm/sandstorm-pkgdef.capnp" />
+        <option value="$PROJECT_DIR$/hackfoldr/redirect.html" />
+        <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/.sandstorm/setup.sh" />
+        <option value="$PROJECT_DIR$/hackfoldr/index.html" />
+        <option value="$PROJECT_DIR$/hackfoldr/js/index.js" />
       </list>
     </option>
   </component>
@@ -188,8 +191,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -206,6 +209,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -242,7 +247,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hackfoldr" />
+              <option name="myItemId" value="sandstorm-integration" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -259,10 +264,6 @@
               <option name="myItemId" value="hackfoldr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -275,31 +276,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value=".sandstorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="linksholder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="linksholder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".sandstorm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app-graphics" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,6 +290,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -320,6 +302,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -383,6 +376,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="11b658c1-403b-483d-a4a9-13389b831ad0" name="Default" comment="" />
@@ -392,20 +388,24 @@
       <updated>1484616708879</updated>
       <workItem from="1484616710511" duration="20695000" />
       <workItem from="1484712427967" duration="15136000" />
+      <workItem from="1484793195270" duration="9129000" />
+      <workItem from="1485133778644" duration="15950000" />
+      <workItem from="1485219089497" duration="8299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35831000" />
+    <option name="totallyTimeSpent" value="69209000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24920635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977462" sideWeight="0.5021164" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977462" sideWeight="0.4978836" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.5021164" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977462" sideWeight="0.4978836" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -432,11 +432,80 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/hackfoldr/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#4476#4482#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackfoldr/index_readonly.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2412">
+          <caret line="134" column="10" lean-forward="false" selection-start-line="134" selection-start-column="10" selection-end-line="134" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackfoldr/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackfoldr/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13086">
+          <caret line="727" column="39" lean-forward="true" selection-start-line="727" selection-start-column="39" selection-end-line="727" selection-end-column="39" />
+          <folding>
+            <marker date="1485230854188" expanded="false" signature="0:3" ph="//..." />
+            <marker date="1485230854188" expanded="true" signature="13515:13529" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.sandstorm/sandstorm-pkgdef.capnp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackfoldr/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="68" column="13" lean-forward="false" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+          <folding>
+            <element signature="e#4476#4482#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1425">
           <caret line="57" column="32" lean-forward="false" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -460,7 +529,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2950">
           <caret line="118" column="48" lean-forward="true" selection-start-line="118" selection-start-column="48" selection-end-line="118" selection-end-column="48" />
-          <folding />
+          <folding>
+            <element signature="e#4476#4482#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -469,7 +540,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1484730340134" expanded="true" signature="13623:13637" ph="..." />
+            <marker date="1485230854188" expanded="false" signature="0:3" ph="//..." />
+            <marker date="1485230854188" expanded="true" signature="13515:13529" ph="..." />
           </folding>
         </state>
       </provider>
@@ -478,7 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -488,7 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
           <caret line="60" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -497,7 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -520,7 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1102" lean-forward="false" selection-start-line="0" selection-start-column="1097" selection-end-line="0" selection-end-column="1382" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -528,7 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="90" column="42" lean-forward="false" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -557,7 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
           <caret line="321" column="0" lean-forward="true" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -565,68 +631,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="22" column="13808" lean-forward="false" selection-start-line="22" selection-start-column="13808" selection-end-line="22" selection-end-column="13808" />
-          <folding>
-            <marker date="1484712339679" expanded="true" signature="333362:333387" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="333389:333395" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="333448:333470" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="333526:333548" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="333551:333557" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="333593:333615" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="333617:333623" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="333677:333699" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="333753:333775" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="333833:333855" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="333858:333864" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="333900:333922" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="333924:333930" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="333988:334010" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="334086:334108" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="334111:334117" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="334153:334175" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="334177:334183" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="334263:334285" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="334345:334367" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="334370:334376" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="334412:334434" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="334436:334442" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="334511:334533" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="334599:334621" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="334624:334630" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="334666:334688" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="334690:334696" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="334761:334783" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="334852:334874" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="334945:334967" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="334970:334976" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="335012:335034" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="335036:335042" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="335106:335128" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="335198:335220" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="335288:335310" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="335313:335319" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="335355:335377" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="335379:335385" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="335448:335470" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="335538:335560" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="335629:335651" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="335655:335661" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="335697:335719" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="335721:335727" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="335788:335810" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="335814:335820" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="335856:335878" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="335880:335886" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="335951:335973" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="336044:336066" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="336134:336156" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="336227:336249" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="336312:336334" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="336397:336419" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="336423:336429" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="336489:336511" ph="..." />
-            <marker date="1484712339679" expanded="true" signature="336513:336519" ph=" " />
-            <marker date="1484712339679" expanded="true" signature="336577:336599" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -634,23 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="587">
           <caret line="57" column="32" lean-forward="false" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.sandstorm/launcher.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="2" lean-forward="false" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.sandstorm/setup.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="37" column="6" lean-forward="false" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,7 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -666,29 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="17" column="53" lean-forward="true" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
-          <folding>
-            <marker date="1484712339639" expanded="true" signature="18366:18379" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="18395:18400" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="18464:18523" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="18539:18544" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="18660:18724" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="19242:19255" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="19271:19276" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="19338:19397" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="19413:19418" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="19476:19493" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="19526:19564" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="19580:19585" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="19779:19819" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="19835:19840" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="20062:20080" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="20106:20147" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="20163:20168" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="20171:20177" ph=" " />
-            <marker date="1484712339639" expanded="true" signature="20277:20295" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="20321:20362" ph="..." />
-            <marker date="1484712339639" expanded="true" signature="21221:21233" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -696,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="66" column="151" lean-forward="true" selection-start-line="66" selection-start-column="151" selection-end-line="66" selection-end-column="151" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -704,7 +667,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="243" column="23" lean-forward="false" selection-start-line="243" selection-start-column="23" selection-end-line="243" selection-end-column="23" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/Dropbox/ssh/github_rsa.pub" />
+    <entry file="file://$PROJECT_DIR$/.sandstorm/origin-sandstorm-pkgdef.capnp" />
+    <entry file="file://$PROJECT_DIR$/.sandstorm/app-graphics/ethercalc-24.svg" />
+    <entry file="file://$PROJECT_DIR$/.sandstorm/orig-sandstorm-pkgdef.capnp" />
+    <entry file="file://$PROJECT_DIR$/sandstorm-integration/getPublicId.c++">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -712,83 +685,96 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackfoldr/index_readonly.html">
+    <entry file="file://$PROJECT_DIR$/sandstorm-integration/Makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="134" column="10" lean-forward="false" selection-start-line="134" selection-start-column="10" selection-end-line="134" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="216">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackfoldr/js/index.js">
+    <entry file="file://$PROJECT_DIR$/.sandstorm/sandstorm-files.list">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="727" column="49" lean-forward="false" selection-start-line="727" selection-start-column="49" selection-end-line="727" selection-end-column="49" />
-          <folding>
-            <marker date="1484730340134" expanded="true" signature="13623:13637" ph="..." />
-          </folding>
+        <state relative-caret-position="377">
+          <caret line="225" column="0" lean-forward="true" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.sandstorm/launcher.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        <state relative-caret-position="108">
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackfoldr/index.html">
+    <entry file="file://$PROJECT_DIR$/.sandstorm/setup.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="68" column="13" lean-forward="false" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-          <folding>
-            <element signature="e#4570#4576#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/Dropbox/ssh/github_rsa.pub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.sandstorm/origin-sandstorm-pkgdef.capnp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="54" column="44" lean-forward="true" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.sandstorm/app-graphics/ethercalc-24.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="162">
+          <caret line="429" column="32" lean-forward="false" selection-start-line="429" selection-start-column="32" selection-end-line="429" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.sandstorm/sandstorm-pkgdef.capnp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="78" column="8" lean-forward="true" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
+        <state relative-caret-position="144">
+          <caret line="69" column="6" lean-forward="true" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackfoldr/redirect.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackfoldr/index_readonly.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackfoldr/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="83" column="143" lean-forward="false" selection-start-line="83" selection-start-column="143" selection-end-line="83" selection-end-column="143" />
+          <folding>
+            <element signature="e#4476#4482#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackfoldr/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="39" lean-forward="true" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+          <folding>
+            <marker date="1485230854188" expanded="false" signature="0:3" ph="//..." />
+            <marker date="1485230854188" expanded="true" signature="13515:13529" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -17,9 +17,9 @@ const pkgdef :Spk.PackageDefinition = (
     # This manifest is included in your app package to tell Sandstorm
     # about your app.
 
-    appVersion = 201701170,  # Increment this for every release.
+    appVersion = 201701230,  # Increment this for every release.
     appTitle = (defaultText = "Linksholder"),
-    appMarketingVersion = (defaultText = "2017.01.18.0"),
+    appMarketingVersion = (defaultText = "2017.01.23.0"),
 
     actions = [
       # Define your "new document" handlers here.
@@ -41,9 +41,10 @@ const pkgdef :Spk.PackageDefinition = (
 
     metadata = (
       icons = (
-        appGrid = (svg = embed "app-graphics/linksholder-128.png"),
-        grain = (svg = embed "app-graphics/linksholder-24.png"),
-        market = (svg = embed "app-graphics/linksholder-150.png"),
+        appGrid = (png = (dpi1x = embed "app-graphics/linksholder-128.png")),
+        grain = (png = (dpi1x = embed "app-graphics/linksholder-24.png",
+                              dpi2x = embed "app-graphics/linksholder-48.png")),
+        market = (png = (dpi1x = embed "app-graphics/linksholder-150.png")),
       ),
 
       website = "https://github.com/PDIS/ethercalc/tree/sandstorm-linksholder",

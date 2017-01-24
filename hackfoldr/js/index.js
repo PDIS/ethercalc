@@ -1,14 +1,14 @@
 // Synchronize sandstorm edit permission
-if (!isCanEdit()) {
-    $("#topbar .edit.table").hide();
-}
+// if (!isCanEdit()) {
+//     $("#topbar .edit.table").hide();
+// }
 
 // prepare to handle url
 var paths = location.pathname.split('/') || [];
 var current_iframe_url = paths[2] ? unescape(unescape(paths[2])) : null;
 var history_state = {};
 // prepare to handle backend data (from ethercalc or google spreadsheet)
-var csv_api_source = "";
+var csv_api_source = "/sheet1.csv";
 var csv_api_source_type = "ethercalc";
 var csv_api_source_id = 'sheet1';
 // prepare to accept foldr options set in ethercalc
@@ -20,9 +20,6 @@ var iframe_src;
 // user preferences saved in local storage
 var foldr_histories = JSON.parse(localStorage.getItem("hackfoldr")) || [];
 var foldr_scale = JSON.parse(localStorage.getItem("hackfoldr-scale")) || "";
-
-// check where the csv will come from, ethercalc or gsheet?
-csv_api_source = './sheet1.csv';
 
 // let user sort #toc menu by drag and drop, a very user friendly feature suggest by @ipa. using jquery ui sortable. (also, ethercalc only)
 var sort_ethercalc = function (sort_initial_row, sort_target_row) {
@@ -112,12 +109,14 @@ var compile_json = function (rows) {
         //  $link_element.attr(key, link_options[key]);
         //}
 
+        // Sandstorm version just open every link in a new tab.
         // parse link options. version 2
-        if (row[2].match(/blank/)) {
-            var link_target = "_blank";
-        } else {
-            var link_target = "iframe";
-        }
+        // if (row[2].match(/blank/)) {
+        //     var link_target = "_blank";
+        // } else {
+        //     var link_target = "iframe";
+        // }
+        var link_target = "_blank";
 
         // automatically assign various of pretty icons for link items
         if (link_url.match(/^.*.hackpad.com\//)) {
@@ -264,29 +263,24 @@ var compile_json = function (rows) {
             $('#toc .ui.vertical.menu').append($link_element);
         }
 
-        // set iframe src?
-        if (current_iframe_url == "edit") {
-            if (csv_api_source_type == "ethercalc") {
-                iframe_src = './';
-            } else {
-                iframe_src = 'https://docs.google.com/spreadsheets/d/' + csv_api_source_id + '/edit';
-            }
-            ;
-            $("title").text("編輯 | " + current_foldr_name + " | hackfoldr");
-            $("#topbar .edit.table").hide();
-            $("#topbar .refresh.table").show();
-            $("#topbar .add.to.list").show();
-        } else if ((new RegExp(context.url + "/?")).test(current_iframe_url)) {
-            iframe_src = current_iframe_url;
-        } else if (/^https:\/\/.*.hackpad.com\//.test(context.url)) {
-            if (current_iframe_url === context.url.split(/\//).pop()) {
-                iframe_src = context.url;
-            }
-        }
-        // the very first link href would be default iframe_src
-        if (!iframe_src) {
-            iframe_src = context.url;
-        }
+        // // set iframe src?
+        // if (current_iframe_url == "edit") {
+        //     iframe_src = './sheet1';
+        //     $("title").text("編輯 | " + current_foldr_name + " | hackfoldr");
+        //     $("#topbar .edit.table").hide();
+        //     $("#topbar .refresh.table").show();
+        //     $("#topbar .add.to.list").show();
+        // } else if ((new RegExp(context.url + "/?")).test(current_iframe_url)) {
+        //     iframe_src = current_iframe_url;
+        // } else if (/^https:\/\/.*.hackpad.com\//.test(context.url)) {
+        //     if (current_iframe_url === context.url.split(/\//).pop()) {
+        //         iframe_src = context.url;
+        //     }
+        // }
+        // // the very first link href would be default iframe_src
+        // if (!iframe_src) {
+        //     iframe_src = context.url;
+        // }
     }
 
     var accordion_template_source = '<div class="ui accordion"><div id="{{id}}" class="title header item {{mode}}"><i class="icon folder closed"></i><i class="icon folder open hidden" data-content="{{title}}" style="display: none;"></i>{{title}}</div><div class="content ui small sortable menu {{mode}}"></div></div>';
@@ -428,7 +422,7 @@ var compile_json = function (rows) {
 
     // set initial iframe src attribute
     if (!$("#iframe").attr("src")) {
-        $("#iframe").attr("src", iframe_src);
+        $("#iframe").attr("src", "./sheet1");
     }
 
     // auto new window, and auto new window icon
@@ -458,6 +452,8 @@ var compile_json = function (rows) {
         } else if (link_url.match(/^.*.www.loomio.org\//)) {
             return true;
         } else if (link_url.match(/^.*.flickr.com\//)) {
+            return true;
+        } else if (location.protocol == 'https:' && link_url.match(/^http:\/\//)) {
             return true;
         } else {
             return false;
@@ -730,12 +726,12 @@ $("#sidebar").on("click tap", "a.link.item", function (event) {
 
     // when leaving ethercalc, show edit icon again
     if (event.target.target !== "_blank") {
-        if (isCanEdit()) {
-            $("#topbar .edit.table").show();
-        }
-        $("#topbar .refresh.table").hide();
-        $("#topbar .add.to.list").hide();
-        $("#topbar .submit.segment").hide();
+        // if (isCanEdit()) {
+        //     $("#topbar .edit.table").show();
+        // }
+        // $("#topbar .refresh.table").hide();
+        // $("#topbar .add.to.list").hide();
+        // $("#topbar .submit.segment").hide();
 
         // reset page title
         $("title").text(
@@ -768,15 +764,23 @@ $("#toc").on("click tap", ".header.item", function () {
     $(this).find('.icon.folder').toggle();
 });
 
+// Always showing, remove
 // when click on edit table button
-$("#topbar .edit.table").on("click tap", function () {
-    // Only sandstorm modifier can edit
-    if (!isCanEdit()) {
-        return;
-    }
-    // show sheet
+// $("#topbar .edit.table").on("click tap", function () {
+//     // Only sandstorm modifier can edit
+//     if (!isCanEdit()) {
+//         return;
+//     }
+//     showSheet();
+//     // switch icon
+//     $("#topbar .edit.table").hide();
+//     $("#topbar .refresh.table").show();
+//     $("#topbar .add.to.list").show();
+// });
+
+function showSheet() {
     if (!hide_sheet) {
-        $("#topbar .edit.table").attr("href", './sheet1');
+        // $("#topbar .edit.table").attr("href", './sheet1');
         // make foldr items sortable
         if (sort_sheet) {
             $("#toc .sortable").sortable(sort_action);
@@ -789,11 +793,7 @@ $("#topbar .edit.table").on("click tap", function () {
         // inactive #toc items
         $("#toc a.link.item").removeClass("active");
     }
-    // switch icon
-    $("#topbar .edit.table").hide();
-    $("#topbar .refresh.table").show();
-    $("#topbar .add.to.list").show();
-});
+}
 
 // RO - Remove href feature, not needed.
 // // add href attr to foldr title
