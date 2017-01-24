@@ -2,17 +2,22 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/main.js" line="156" />
-    <bookmark url="file://$PROJECT_DIR$/main.js" line="421" />
+    <bookmark url="file://$PROJECT_DIR$/hackfoldr_static/js/index.js" line="495" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11b658c1-403b-483d-a4a9-13389b831ad0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackfoldr/view_only.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/linksholder.spk" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackfoldr_static/ok.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hackfoldr/docs/Developing Hackfoldr 2.0 zh-tw.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hackfoldr/docs/Hosting your own Hackfoldr 2.0 zh-tw.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hackfoldr/docs/Hosting your own Hackfoldr 2.0.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hackfoldr/docs/imgs/gh-pages-branch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hackfoldr/docs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hackfoldr/js/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hackfoldr/redirect.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sandstorm/DESCRIPTION.mkdn" afterPath="$PROJECT_DIR$/.sandstorm/DESCRIPTION.mkdn" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sandstorm/sandstorm-files.list" afterPath="$PROJECT_DIR$/.sandstorm/sandstorm-files.list" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sandstorm/sandstorm-pkgdef.capnp" afterPath="$PROJECT_DIR$/.sandstorm/sandstorm-pkgdef.capnp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackfoldr/index_readonly.html" afterPath="$PROJECT_DIR$/hackfoldr/index_readonly.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sandstorm/setup.sh" afterPath="$PROJECT_DIR$/.sandstorm/setup.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackfoldr/index.html" afterPath="$PROJECT_DIR$/hackfoldr/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackfoldr/js/index.js" afterPath="$PROJECT_DIR$/hackfoldr/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
     </list>
@@ -32,73 +37,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="405" column="19" lean-forward="false" selection-start-line="405" selection-start-column="19" selection-end-line="405" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_only.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackfoldr/view_only.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sandstorm-pkgdef.capnp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.sandstorm/sandstorm-pkgdef.capnp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="52" column="42" lean-forward="true" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="redirect.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackfoldr/redirect.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_readonly.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackfoldr/index_readonly.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="83" column="16" lean-forward="false" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackfoldr/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="370" column="0" lean-forward="false" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
-              <folding>
-                <marker date="1485233119218" expanded="true" signature="11093:11107" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DESCRIPTION.mkdn" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.sandstorm/DESCRIPTION.mkdn">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="89" lean-forward="true" selection-start-line="1" selection-start-column="89" selection-end-line="1" selection-end-column="89" />
+            <state relative-caret-position="181">
+              <caret line="423" column="64" lean-forward="true" selection-start-line="423" selection-start-column="64" selection-end-line="423" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -108,19 +51,55 @@
         <entry file="file://$PROJECT_DIR$/hackfoldr/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="172">
-              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+              <caret line="67" column="75" lean-forward="false" selection-start-line="67" selection-start-column="75" selection-end-line="67" selection-end-column="75" />
               <folding>
-                <element signature="e#4476#4482#1" expanded="true" />
+                <element signature="e#4483#4489#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setup.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.sandstorm/setup.sh">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hackfoldr_static/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="98">
+              <caret line="16" column="71" lean-forward="true" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+              <folding>
+                <element signature="e#4389#4395#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hackfoldr/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="462" column="20" lean-forward="false" selection-start-line="462" selection-start-column="20" selection-end-line="462" selection-end-column="20" />
+              <folding>
+                <marker date="1485249770998" expanded="true" signature="11093:11107" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hackfoldr_static/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="498" column="75" lean-forward="true" selection-start-line="498" selection-start-column="75" selection-end-line="498" selection-end-column="75" />
+              <folding>
+                <marker date="1485249938782" expanded="true" signature="13150:13164" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SocialCalc.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hackfoldr_static/assets/SocialCalc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="1347" column="41" lean-forward="true" selection-start-line="1347" selection-start-column="41" selection-end-line="1347" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -138,25 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>csv_api</find>
-      <find>ExportCSV =</find>
-      <find>ExportCSV</find>
-      <find>('shee</find>
-      <find>/hackfoldr/</find>
-      <find>&quot;/</find>
-      <find>api =</find>
-      <find>exportCSV</find>
-      <find>SC =</find>
-      <find>_blank</find>
-      <find>link_target</find>
-      <find>[0</find>
-      <find>initial</find>
-      <find>frame_src</find>
-      <find>google.com</find>
-      <find>link_icon</find>
-      <find>topbar</find>
-      <find>add</find>
-      <find>.edit.table</find>
       <find>.add</find>
       <find>.add.to</find>
       <find>add to</find>
@@ -167,7 +127,26 @@
       <find>./sheet</find>
       <find>.edit</find>
       <find>iframe</find>
+      <find>foware</find>
+      <find>history</find>
+      <find>.history</find>
+      <find>./hackfoldr/assets</find>
+      <find>./hackfoldr/assets/</find>
+      <find>./hackfoldr/</find>
       <find>編輯</find>
+      <find>csv_</find>
+      <find>Social</find>
+      <find>SocialCalc.</find>
+      <find>ConvertSaveToOtherFormat</find>
+      <find>SocialCalc</find>
+      <find>alert</find>
+      <find>csv</find>
+      <find>socialcalc.</find>
+      <find>_new</find>
+      <find>.csv</find>
+      <find>api_source</find>
+      <find>pos</find>
+      <find>dump.json</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -187,14 +166,18 @@
         <option value="$PROJECT_DIR$/sandstorm-integration/getPublicId.c++" />
         <option value="$PROJECT_DIR$/sandstorm-integration/Makefile" />
         <option value="$PROJECT_DIR$/hackfoldr/redirect.html" />
-        <option value="$PROJECT_DIR$/.sandstorm/setup.sh" />
-        <option value="$PROJECT_DIR$/hackfoldr/index.html" />
         <option value="$PROJECT_DIR$/.sandstorm/DESCRIPTION.mkdn" />
-        <option value="$PROJECT_DIR$/main.js" />
-        <option value="$PROJECT_DIR$/hackfoldr/js/index.js" />
         <option value="$PROJECT_DIR$/hackfoldr/view_only.html" />
         <option value="$PROJECT_DIR$/hackfoldr/index_readonly.html" />
         <option value="$PROJECT_DIR$/.sandstorm/sandstorm-pkgdef.capnp" />
+        <option value="$PROJECT_DIR$/.sandstorm/setup.sh" />
+        <option value="$PROJECT_DIR$/hackfoldr/index.html" />
+        <option value="$PROJECT_DIR$/hackfoldr_static/ok.html" />
+        <option value="$PROJECT_DIR$/hackfoldr_static/redirect.html" />
+        <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/hackfoldr_static/index.html" />
+        <option value="$PROJECT_DIR$/hackfoldr/js/index.js" />
+        <option value="$PROJECT_DIR$/hackfoldr_static/js/index.js" />
       </list>
     </option>
   </component>
@@ -268,7 +251,75 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="hackfoldr_static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="linksholder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="linksholder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackfoldr_static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="linksholder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="linksholder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackfoldr_static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="linksholder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="linksholder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="hackfoldr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="linksholder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="linksholder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackfoldr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -397,12 +448,12 @@
       <workItem from="1484712427967" duration="15136000" />
       <workItem from="1484793195270" duration="9129000" />
       <workItem from="1485133778644" duration="15950000" />
-      <workItem from="1485219089497" duration="11376000" />
+      <workItem from="1485219089497" duration="19499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72286000" />
+    <option name="totallyTimeSpent" value="80409000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -411,8 +462,8 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.5021164" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977462" sideWeight="0.4978836" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.504375" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.495625" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -439,100 +490,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hackfoldr/index_readonly.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2412">
-          <caret line="134" column="10" lean-forward="false" selection-start-line="134" selection-start-column="10" selection-end-line="134" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackfoldr/js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackfoldr/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13086">
-          <caret line="727" column="39" lean-forward="true" selection-start-line="727" selection-start-column="39" selection-end-line="727" selection-end-column="39" />
-          <folding>
-            <marker date="1485233119218" expanded="true" signature="11093:11107" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.sandstorm/sandstorm-pkgdef.capnp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackfoldr/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="68" column="13" lean-forward="false" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-          <folding>
-            <element signature="e#4476#4482#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="57" column="32" lean-forward="false" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10000">
-          <caret line="400" column="40" lean-forward="true" selection-start-line="400" selection-start-column="40" selection-end-line="400" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1675">
-          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackfoldr/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2950">
-          <caret line="118" column="48" lean-forward="true" selection-start-line="118" selection-start-column="48" selection-end-line="118" selection-end-column="48" />
-          <folding>
-            <element signature="e#4476#4482#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackfoldr/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1485233119218" expanded="true" signature="11093:11107" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hackfoldr/js/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -686,6 +643,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="225" column="0" lean-forward="true" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -704,10 +662,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.sandstorm/setup.sh">
+    <entry file="file://$PROJECT_DIR$/hackfoldr/docs/Hosting your own Hackfoldr 2.0 zh-tw.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="108">
+          <caret line="6" column="70" lean-forward="false" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="74" />
           <folding />
         </state>
       </provider>
@@ -715,15 +673,39 @@
     <entry file="file://$PROJECT_DIR$/.sandstorm/DESCRIPTION.mkdn">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="1" column="89" lean-forward="true" selection-start-line="1" selection-start-column="89" selection-end-line="1" selection-end-column="89" />
+          <caret line="1" column="89" lean-forward="false" selection-start-line="1" selection-start-column="89" selection-end-line="1" selection-end-column="89" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
+    <entry file="file://$PROJECT_DIR$/hackfoldr/index_readonly.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="405" column="19" lean-forward="false" selection-start-line="405" selection-start-column="19" selection-end-line="405" selection-end-column="19" />
+        <state relative-caret-position="152">
+          <caret line="83" column="16" lean-forward="false" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackfoldr_static/ok.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.sandstorm/sandstorm-pkgdef.capnp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackfoldr/view_only.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -736,20 +718,297 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackfoldr/js/index.js">
+    <entry file="file://$PROJECT_DIR$/hackfoldr_static/redirect.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="370" column="0" lean-forward="false" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.sandstorm/setup.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="67" column="17" lean-forward="false" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/socialcalc.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/socialcalc/SocialCalc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3185">
+          <caret line="1516" column="0" lean-forward="false" selection-start-line="1516" selection-start-column="0" selection-end-line="1516" selection-end-column="0" />
           <folding>
-            <marker date="1485233119218" expanded="true" signature="11093:11107" ph="..." />
+            <element signature="n#!!doc" expanded="false" />
+            <marker date="1469549821000" expanded="true" signature="9862:9945" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="10191:10274" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="11941:11952" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="12018:12028" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="313624:313653" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="333787:333793" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="346716:346869" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="346871:346877" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="346910:346972" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="348450:348552" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="348554:348560" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="348595:348657" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="355669:355819" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="355821:355827" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="355858:355920" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="357183:357281" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="357283:357289" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="357320:357382" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="488964:488980" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="547574:547594" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="549436:549456" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="788915:788945" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="788975:789049" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="789097:789138" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="789177:789183" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="789184:789190" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="796285:796330" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="799152:799201" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="799506:799533" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="800225:800244" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="800440:800446" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="800446:800452" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="800452:800458" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="800458:800464" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="800603:800640" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="800915:800952" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="801585:801604" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="802539:802588" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="803473:803500" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="806952:807129" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="807205:807211" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="810762:810811" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="811739:811758" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="811809:811820" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="814954:815086" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="815117:815123" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="815149:815220" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="815277:815348" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="821742:821791" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="834126:834151" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="834157:834163" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="834216:834238" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="834298:834320" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="834327:834333" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="834369:834391" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="834393:834399" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="834457:834479" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="834537:834559" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="834621:834643" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="834650:834656" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="834692:834714" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="834716:834722" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="834784:834806" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="834886:834908" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="834915:834921" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="834957:834979" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="834981:834987" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="835071:835093" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="835157:835179" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="835186:835192" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="835228:835250" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="835252:835258" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="835331:835353" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="835423:835445" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="835452:835458" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="835494:835516" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="835518:835524" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="835593:835615" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="835688:835710" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="835785:835807" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="835814:835820" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="835856:835878" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="835880:835886" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="835954:835976" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="836050:836072" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="836144:836166" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="836173:836179" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="836215:836237" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="836239:836245" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="836312:836334" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="836406:836428" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="836501:836523" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="836531:836537" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="836573:836595" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="836597:836603" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="836668:836690" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="836698:836704" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="836740:836762" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="836764:836770" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="836839:836861" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="836936:836958" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="837030:837052" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="837127:837149" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="837216:837238" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="837305:837327" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="837335:837341" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="837401:837423" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="837425:837431" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="837493:837515" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="837838:837851" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="837906:837919" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="838005:838010" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="838558:838571" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="838657:838662" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="838714:838720" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="854748:854761" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="854842:854891" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="854919:854924" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="855223:855241" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="855285:855355" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="855383:855388" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="855390:855396" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="855533:855551" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="855595:855633" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="855718:855737" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="855767:855772" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="856019:856051" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="856174:856206" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="856314:856352" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="856437:856456" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="856486:856491" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="856738:856770" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="856893:856925" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="857033:857071" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="857156:857175" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="857205:857210" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="857453:857485" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="857606:857638" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="858108:858121" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="858146:858151" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="858153:858159" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="858388:858407" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="858424:858452" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="858711:858761" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="860660:860673" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="860780:860834" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="860905:860924" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="860936:860942" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="861034:861052" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="861405:861418" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="861499:861537" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="861565:861570" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="861814:861851" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="861879:861884" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="861961:861990" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="862066:862103" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="862131:862136" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="862220:862250" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="862326:862363" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="862391:862396" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="862486:862516" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="862592:862642" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="862670:862675" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="862830:862848" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="862892:862929" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="862957:862962" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="862964:862970" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="863081:863099" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="863209:863227" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="863611:863624" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="863705:863743" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="863771:863776" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="863793:863799" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="864118:864161" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="864390:864396" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="864559:864565" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="864851:864869" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="864919:864925" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="865006:865024" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="865075:865081" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="865148:865203" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="868958:868985" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="872836:872842" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="913688:913722" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="913814:913826" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="914142:914148" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="914148:914154" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="914193:914227" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="914319:914331" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="914657:914713" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="914837:914898" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="914962:914980" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="915041:915047" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="915110:915128" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="915765:915795" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="915822:915896" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="915901:915907" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="915955:915996" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="916055:916061" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="916062:916068" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="916108:916130" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="920550:920599" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="920645:920714" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="920797:920815" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="920877:920883" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="920944:920962" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="921024:921030" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="921092:921110" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="921746:921776" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="921803:921877" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="921959:922000" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="922059:922065" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="922066:922072" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="922112:922134" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="925917:925941" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="925969:925987" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="926080:926092" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="926173:926191" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="926275:926287" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="926455:926473" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="926572:926584" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="926673:926691" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="926791:926803" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="926970:926976" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="927002:927020" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="927120:927126" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="927152:927170" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="927255:927324" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="927399:927417" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="927474:927480" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="927541:927559" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="927616:927622" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="927684:927702" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="928333:928363" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="928390:928464" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="928469:928475" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="928528:928569" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="928623:928629" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="928630:928636" ph=" " />
+            <marker date="1469549821000" expanded="true" signature="928676:928698" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="968502:968527" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="975520:975536" ph="..." />
+            <marker date="1469549821000" expanded="true" signature="975555:975561" ph=" " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackfoldr/view_only.html">
+    <entry file="file://$PROJECT_DIR$/hackfoldr_static/assets/csv.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        <state relative-caret-position="-4752">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackfoldr_static/assets/SocialCalc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="1347" column="41" lean-forward="true" selection-start-line="1347" selection-start-column="41" selection-end-line="1347" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -757,25 +1016,63 @@
     <entry file="file://$PROJECT_DIR$/hackfoldr/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <caret line="67" column="75" lean-forward="false" selection-start-line="67" selection-start-column="75" selection-end-line="67" selection-end-column="75" />
           <folding>
-            <element signature="e#4476#4482#1" expanded="true" />
+            <element signature="e#4483#4489#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackfoldr/index_readonly.html">
+    <entry file="file://$PROJECT_DIR$/hackfoldr_static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="83" column="16" lean-forward="false" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+        <state relative-caret-position="98">
+          <caret line="16" column="71" lean-forward="true" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+          <folding>
+            <element signature="e#4389#4395#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackfoldr/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="462" column="20" lean-forward="false" selection-start-line="462" selection-start-column="20" selection-end-line="462" selection-end-column="20" />
+          <folding>
+            <marker date="1485249770998" expanded="true" signature="11093:11107" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackfoldr_static/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="498" column="75" lean-forward="true" selection-start-line="498" selection-start-column="75" selection-end-line="498" selection-end-column="75" />
+          <folding>
+            <marker date="1485249938782" expanded="true" signature="13150:13164" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.sandstorm/sandstorm-pkgdef.capnp">
+    <entry file="file://$PROJECT_DIR$/src/db.ls">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="52" column="42" lean-forward="true" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+        <state relative-caret-position="161">
+          <caret line="64" column="40" lean-forward="false" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="423" column="64" lean-forward="true" selection-start-line="423" selection-start-column="64" selection-end-line="423" selection-end-column="64" />
           <folding />
         </state>
       </provider>

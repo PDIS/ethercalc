@@ -141,23 +141,14 @@ opt/app/hackfoldr/assets/tabletop/tabletop.js
 opt/app/hackfoldr/css
 opt/app/hackfoldr/css/global.css
 opt/app/hackfoldr/css/index.html
-opt/app/hackfoldr/docs
-opt/app/hackfoldr/docs/Developing Hackfoldr 2.0 zh-tw.md
-opt/app/hackfoldr/docs/Hosting your own Hackfoldr 2.0 zh-tw.md
-opt/app/hackfoldr/docs/Hosting your own Hackfoldr 2.0.md
-opt/app/hackfoldr/docs/imgs
-opt/app/hackfoldr/docs/imgs/gh-pages-branch.png
-opt/app/hackfoldr/docs/index.html
 opt/app/hackfoldr/foldr_history-menu.html
 opt/app/hackfoldr/help-menu.html
 opt/app/hackfoldr/index.html
 opt/app/hackfoldr/index_readonly.html
 opt/app/hackfoldr/js
 opt/app/hackfoldr/js/config.js
-opt/app/hackfoldr/js/index.html
 opt/app/hackfoldr/js/index.js
 opt/app/hackfoldr/js/test.js
-opt/app/hackfoldr/redirect.html
 opt/app/hackfoldr/sass
 opt/app/hackfoldr/sass/global.sass
 opt/app/hackfoldr/sass/index.html
@@ -167,6 +158,97 @@ opt/app/hackfoldr/white_label-shortcuts-dropdown.html
 opt/app/hackfoldr/white_label-shortcuts-nav.html
 opt/app/hackfoldr/white_label-shortcuts-topbar.html
 opt/app/hackfoldr/zoom-menu.html
+opt/app/hackfoldr_static
+opt/app/hackfoldr_static/404.html
+opt/app/hackfoldr_static/UI resources
+opt/app/hackfoldr_static/UI resources/hack-folder-app-icon.sketch
+opt/app/hackfoldr_static/UI resources/hack-folder-app-icon.sketch/Data
+opt/app/hackfoldr_static/UI resources/hack-folder-app-icon.sketch/metadata
+opt/app/hackfoldr_static/UI resources/hack-folder-app-icon.sketch/version
+opt/app/hackfoldr_static/UI resources/index.html
+opt/app/hackfoldr_static/_template.html
+opt/app/hackfoldr_static/assets
+opt/app/hackfoldr_static/assets/SocialCalc.js
+opt/app/hackfoldr_static/assets/csv.js
+opt/app/hackfoldr_static/assets/handlebars-v1.3.0.js
+opt/app/hackfoldr_static/assets/img
+opt/app/hackfoldr_static/assets/img/app-icon
+opt/app/hackfoldr_static/assets/img/app-icon/icon-60.png
+opt/app/hackfoldr_static/assets/img/app-icon/icon-60@2x.png
+opt/app/hackfoldr_static/assets/img/app-icon/icon-76.png
+opt/app/hackfoldr_static/assets/img/app-icon/icon-76@2x.png
+opt/app/hackfoldr_static/assets/img/favicon
+opt/app/hackfoldr_static/assets/img/favicon/favicon.ico
+opt/app/hackfoldr_static/assets/index.html
+opt/app/hackfoldr_static/assets/jquery
+opt/app/hackfoldr_static/assets/jquery-ui
+opt/app/hackfoldr_static/assets/jquery-ui/1.11.0.custom
+opt/app/hackfoldr_static/assets/jquery-ui/1.11.0.custom/external
+opt/app/hackfoldr_static/assets/jquery-ui/1.11.0.custom/external/jquery
+opt/app/hackfoldr_static/assets/jquery-ui/1.11.0.custom/external/jquery/jquery.js
+opt/app/hackfoldr_static/assets/jquery-ui/1.11.0.custom/index.html
+opt/app/hackfoldr_static/assets/jquery-ui/1.11.0.custom/jquery-ui.css
+opt/app/hackfoldr_static/assets/jquery-ui/1.11.0.custom/jquery-ui.js
+opt/app/hackfoldr_static/assets/jquery-ui/1.11.0.custom/jquery-ui.min.css
+opt/app/hackfoldr_static/assets/jquery-ui/1.11.0.custom/jquery-ui.min.js
+opt/app/hackfoldr_static/assets/jquery-ui/1.11.0.custom/jquery-ui.structure.css
+opt/app/hackfoldr_static/assets/jquery-ui/1.11.0.custom/jquery-ui.structure.min.css
+opt/app/hackfoldr_static/assets/jquery/1.10.2
+opt/app/hackfoldr_static/assets/jquery/1.10.2/jquery-1.10.2.min.map
+opt/app/hackfoldr_static/assets/jquery/1.10.2/jquery.js
+opt/app/hackfoldr_static/assets/jquery/1.10.2/jquery.min.js
+opt/app/hackfoldr_static/assets/jquery/jquery-2.1.1.min.js
+opt/app/hackfoldr_static/assets/semantic-ui
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/css
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/css/semantic.css
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/css/semantic.min.css
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/fonts
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/fonts/basic.icons.eot
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/fonts/basic.icons.svg
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/fonts/basic.icons.ttf
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/fonts/basic.icons.woff
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/fonts/icons.eot
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/fonts/icons.otf
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/fonts/icons.svg
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/fonts/icons.ttf
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/fonts/icons.woff
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/images
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/images/loader-large-inverted.gif
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/images/loader-large.gif
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/images/loader-medium-inverted.gif
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/images/loader-medium.gif
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/images/loader-mini-inverted.gif
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/images/loader-mini.gif
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/images/loader-small-inverted.gif
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/images/loader-small.gif
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/javascript
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/javascript/semantic.js
+opt/app/hackfoldr_static/assets/semantic-ui/0.19.0/javascript/semantic.min.js
+opt/app/hackfoldr_static/assets/semantic-ui/index.html
+opt/app/hackfoldr_static/assets/tabletop
+opt/app/hackfoldr_static/assets/tabletop/tabletop.js
+opt/app/hackfoldr_static/css
+opt/app/hackfoldr_static/css/global.css
+opt/app/hackfoldr_static/css/index.html
+opt/app/hackfoldr_static/foldr_history-menu.html
+opt/app/hackfoldr_static/help-menu.html
+opt/app/hackfoldr_static/index.html
+opt/app/hackfoldr_static/js
+opt/app/hackfoldr_static/js/config.js
+opt/app/hackfoldr_static/js/index.js
+opt/app/hackfoldr_static/js/test.js
+opt/app/hackfoldr_static/ok.html
+opt/app/hackfoldr_static/redirect.html
+opt/app/hackfoldr_static/sass
+opt/app/hackfoldr_static/sass/global.sass
+opt/app/hackfoldr_static/sass/index.html
+opt/app/hackfoldr_static/shortcuts-menu.html
+opt/app/hackfoldr_static/view_only.html
+opt/app/hackfoldr_static/white_label-shortcuts-dropdown.html
+opt/app/hackfoldr_static/white_label-shortcuts-nav.html
+opt/app/hackfoldr_static/white_label-shortcuts-topbar.html
+opt/app/hackfoldr_static/zoom-menu.html
 opt/app/images/sc_1x1.gif
 opt/app/images/sc_aligncenter.png
 opt/app/images/sc_alignleft.png
@@ -573,6 +655,7 @@ opt/app/node_modules/smtp-connection/lib/data-stream.js
 opt/app/node_modules/smtp-connection/lib/smtp-connection.js
 opt/app/node_modules/smtp-connection/package.json
 opt/app/node_modules/socialcalc/SocialCalc.js
+opt/app/node_modules/socialcalc/package.json
 opt/app/node_modules/socket.io-adapter/index.js
 opt/app/node_modules/socket.io-adapter/node_modules/debug/lib/debug.js
 opt/app/node_modules/socket.io-adapter/node_modules/debug/package.json
@@ -676,6 +759,7 @@ opt/app/node_modules/zappajs/vendor/socket.io.js
 opt/app/player-broadcast.js
 opt/app/player-graph.js
 opt/app/player.js
+opt/app/sandstorm-integration/bin/getPublicId
 opt/app/sc.js
 opt/app/src
 opt/app/static/download.png

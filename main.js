@@ -399,7 +399,10 @@
     var publishUrl;
     this.get({
         '/_published': function(){
-            return this.response.redirect(publishUrl);
+          if (typeof publishUrl === "undefined") {
+              return sendFile('hackfoldr_static/redirect.html').call(this);
+          }
+          return this.response.redirect(publishUrl);
         }
     });
     this.get({
@@ -408,28 +411,25 @@
         }
     });
     this.get({
+        '/_dump': function(){
+            // Copy static files
+            var sys = require('sys');
+            var exec = require('child_process').exec;
+            var fs = require('fs');
+            exec("/opt/app/sandstorm-integration/bin/getPublicId " + this.request.get('X-Sandstorm-Session-Id'),
+                function (error, stdout, stderr) {
+                    exec("mkdir -p /var/www; cp -R /opt/app/hackfoldr_static/* /var/www/");
+                    publishUrl = stdout.split('\n')[2];
+                    // Copy dump
+                    exec("cp /var/dump.json /var/www/dump.json",
+                        function (error, stdout, stderr) {
+                        });
+                });
+            return sendFile('hackfoldr_static/ok.html').call(this);
+        }
+    });
+    this.get({
         '/_hackfoldr': function(){
-            // // Copy files
-            // var sys = require('sys');
-            // var exec = require('child_process').exec;
-            // var fs = require('fs');
-            // exec("/opt/app/sandstorm-integration/bin/getPublicId " + this.request.get('X-Sandstorm-Session-Id'),
-            //     function (error, stdout, stderr) {
-            //         exec("mkdir -p /var/www; cp -R /opt/app/hackfoldr/* /var/www/");
-            //         publishUrl = stdout.split('\n')[2];
-            //     });
-            //
-            // // Generate CSV
-            // var str=',TT\nhttp://dmm.com/,DMM\nhttps://g0v.hackpad.com/G7idRJqbG3I,hackpad';
-            // fs.writeFile("/var/www/sheet1.csv", str, function(err) {
-            //     if(err) {
-            //         return console.log(err);
-            //     }
-            //     console.log("The file was saved!");
-            // });
-            //
-            // return sendFile('hackfoldr/redirect.html').call(this);
-
             var uiFile, ref$, ref1$;
             if (!/modify/.test(this.request.get('x-sandstorm-permissions')) && !((ref$ = this.query.auth) != null && ref$.length)) {
               return sendFile('hackfoldr/index_readonly.html').call(this);

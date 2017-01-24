@@ -1,11 +1,12 @@
+// Synchronize sandstorm edit permission
+if (!isCanEdit()) {
+    $("#topbar .edit.table").hide();
+}
+
 // prepare to handle url
 var paths = location.pathname.split('/') || [];
 var current_iframe_url = paths[2] ? unescape(unescape(paths[2])) : null;
 var history_state = {};
-// prepare to handle backend data (from ethercalc or google spreadsheet)
-var csv_api_source = "/sheet1.csv";
-var csv_api_source_type = "ethercalc";
-var csv_api_source_id = 'sheet1';
 // prepare to accept foldr options set in ethercalc
 var hide_sheet = false;
 var sort_sheet = true;
@@ -15,6 +16,7 @@ var iframe_src;
 // user preferences saved in local storage
 var foldr_histories = JSON.parse(localStorage.getItem("hackfoldr")) || [];
 var foldr_scale = JSON.parse(localStorage.getItem("hackfoldr-scale")) || "";
+
 
 // let user sort #toc menu by drag and drop, a very user friendly feature suggest by @ipa. using jquery ui sortable. (also, ethercalc only)
 var sort_ethercalc = function (sort_initial_row, sort_target_row) {
@@ -60,6 +62,19 @@ var sort_action = {
 
 // compile sandstorm Ethercalc grain data
 var compile_json = function (rows) {
+
+    // // jump from ethercalc to google spreadsheet when A1 is filled with a gsheet id
+    // if(csv_api_source_type == "ethercalc" && !rows[0][0].match(/^#/) && rows[0][0].length >= 40){
+    //   // reset all related variables and compile again
+    //   csv_api_source = 'docs.google.com/feeds/download/spreadsheets/Export?key='+rows[0][0]+'&exportFormat=csv&gid=0';
+    //   csv_api_source_type = "google";
+    //   csv_api_source_id = rows[0][0].trim();
+    //   // remember? we don't support submit forms with gsheet. so need to remove the + button as well as the form segment.
+    //   $("#topbar .add.to.list, #topbar .submit.segment").remove();
+    //   compile_ethercalc();
+    //   return
+    // }
+
     // at the first beginning, we don't have a foldr title. so we are going to get the title before any other thing happens.
     var got_title = false
     // #toc menu items are at root level by default. if depth == 1, they will be in level 1 submenu, which is wrapped inside an semantic ui accordion
@@ -79,7 +94,24 @@ var compile_json = function (rows) {
         var link_icon = "";
         var link_type = "link";
         var link_url = row[0].trim();
-        var link_target = "_blank";
+
+        // parse link options. version 1
+        //try{
+        //  var link_options = JSON.parse(row[2]);
+        //}catch(e){
+        //  var link_options = {};
+        //}
+        // apply additional link options set in column c... well, since there seems to be only one possible option (target), i would like to make it easier to setup... how about just writing "blank" keyword?
+        //for(key in link_options){
+        //  $link_element.attr(key, link_options[key]);
+        //}
+
+        // parse link options. version 2
+        if (row[2].match(/blank/)) {
+            var link_target = "_blank";
+        } else {
+            var link_target = "iframe";
+        }
 
         // automatically assign various of pretty icons for link items
         if (link_url.match(/^.*.hackpad.com\//)) {
@@ -225,6 +257,25 @@ var compile_json = function (rows) {
         } else {
             $('#toc .ui.vertical.menu').append($link_element);
         }
+
+        // set iframe src?
+        if (current_iframe_url == "edit") {
+            iframe_src = './';
+            $("title").text("編輯 | " + current_foldr_name + " | hackfoldr");
+            $("#topbar .edit.table").hide();
+            $("#topbar .refresh.table").show();
+            $("#topbar .add.to.list").show();
+        } else if ((new RegExp(context.url + "/?")).test(current_iframe_url)) {
+            iframe_src = current_iframe_url;
+        } else if (/^https:\/\/.*.hackpad.com\//.test(context.url)) {
+            if (current_iframe_url === context.url.split(/\//).pop()) {
+                iframe_src = context.url;
+            }
+        }
+        // the very first link href would be default iframe_src
+        if (!iframe_src) {
+            iframe_src = context.url;
+        }
     }
 
     var accordion_template_source = '<div class="ui accordion"><div id="{{id}}" class="title header item {{mode}}"><i class="icon folder closed"></i><i class="icon folder open hidden" data-content="{{title}}" style="display: none;"></i>{{title}}</div><div class="content ui small sortable menu {{mode}}"></div></div>';
@@ -233,6 +284,13 @@ var compile_json = function (rows) {
     // for foldr items
     var add_accordion = function (row_index, row) {
 
+        // foldr options, version 1
+        //try{
+        //  var options = JSON.parse(row[2]);
+        //}catch(e){
+        //  var options = {};
+        //}
+        // foldr options, version 2
         if (row[2].match(/expand/)) {
             var foldr_mode = "active";
         } else if (row[2].match(/collapse/)) {
@@ -359,15 +417,7 @@ var compile_json = function (rows) {
 
     // set initial iframe src attribute
     if (!$("#iframe").attr("src")) {
-        if (isCanEdit()) {
-            $("#iframe").attr("src", "./sheet1");
-        } else {
-            $("#iframe").attr("src", "./_viewonly");
-        }
-    }
-    if (!isCanEdit()) {
-        $("#topbar .add.to.list").hide();
-        $("#topbar .submit.segment").hide();
+        $("#iframe").attr("src", iframe_src);
     }
 
     // auto new window, and auto new window icon
@@ -397,8 +447,6 @@ var compile_json = function (rows) {
         } else if (link_url.match(/^.*.www.loomio.org\//)) {
             return true;
         } else if (link_url.match(/^.*.flickr.com\//)) {
-            return true;
-        } else if (location.protocol == 'https:' && link_url.match(/^http:\/\//)) {
             return true;
         } else {
             return false;
@@ -434,10 +482,8 @@ var compile_json = function (rows) {
 
     // make #toc sortable on edit page by default
     if (current_iframe_url == "edit") {
-        if (csv_api_source_type == "ethercalc") {
-            if (sort_sheet) {
-                $("#toc .sortable").sortable(sort_action);
-            }
+        if (sort_sheet) {
+            $("#toc .sortable").sortable(sort_action);
         }
     }
 
@@ -446,29 +492,32 @@ var compile_json = function (rows) {
     // $('i.icon').popup();
 }
 
-var initalized = false;
 // prepare to load or refresh csv data
 var compile_ethercalc = function () {
-    // compile ethercalc csv
-    $.ajax('./sheet1.csv', {
-        success: function(data){
-            compile_json(CSV.parse(data));
-        },
-        error: function(error, textStatus, errorThrown ) {
-            if (errorThrown == 'Not Found') {
-                if (initalized) {
-                    compile_ethercalc();
-                } else {
-                    post_ethercalc('資料夾標題', '');
-                    initalized = true;
-                }
-            }
+    $.ajax('dump.json', {
+        success: function (response) {
+            var csv = SocialCalc.ConvertSaveToOtherFormat(response, 'csv');
+            console.log('csv='+CSV.parse(csv));
+            compile_json(CSV.parse(csv));
+        }, error: function (error, textMessage, errorThrown) {
+            console.log("error:"+textMessage);
+            console.log("error:"+errorThrown);
         }
     });
 };
 
 // load page~
 compile_ethercalc();
+
+// setup history menu
+$.each(foldr_histories, function (index, foldr_history) {
+    var item = JSON.parse(foldr_history);
+    $("#sidebar .history .menu").append(
+        $('<a />', {href: '/' + item.foldr_id, 'class': 'foldr item'})
+            .text(item.foldr_name)
+            .prepend($('<i class="icon exchange"></i>'))
+    );
+});
 
 // activate semantic ui components
 $('.ui.dropdown').dropdown();
@@ -522,12 +571,7 @@ $("#nav, #topbar").on("click tap", ".zoom.dropdown .larger", function () {
 });
 
 // history button
-$("#nav .static, #topbar .history").on("click tap", function () {
-    $.ajax('./_dump', {
-        success: function () {
-            window.open('./_published');
-        }
-    });
+$("#nav .history, #topbar .history").on("click tap", function () {
     if ($("#sidebar .history .menu").has("a.foldr.item").length == 0) {
         $("#sidebar .history .menu .no.data").show();
     } else {
@@ -537,14 +581,12 @@ $("#nav .static, #topbar .history").on("click tap", function () {
 
 // refresh table
 // load ethercalc data only instead of loading the whole page
-$("#topbar .refresh.table").on("click tap", refresh);
-
-function refresh() {
+$("#topbar .refresh.table").on("click tap", function () {
     $("#toc .menu").html("");
     $("#topbar .submit.segment").hide();
     //$("#topbar .submit.segment .error.message").hide();
     compile_ethercalc();
-}
+});
 
 // open submit form
 $("#topbar .add.to.list").on("click tap", function () {
@@ -570,13 +612,12 @@ $("#topbar .submit.segment .checkbox.add.create").on("click tap", function () {
 var post_ethercalc = function (post_title, post_url) {
     $.ajax({
         url: "./_/sheet1",
+        // url: "https://ethercalc.org/_/"+ethercalc_name,
+        //url: "https://ethercalc.org/_/"+ethercalc_name+"?row="+new_pad_row_index.toString(),
         type: 'POST',
         contentType: 'text/csv',
         processData: false,
-        data: post_url + ',' + post_title,
-        success: function () {
-            refresh();
-        }
+        data: post_url + ',' + post_title
     });
 };
 
@@ -586,7 +627,7 @@ $("#topbar .form .submit.add.create").on("click tap", function () {
     //var new_hackpad_id = encodeURIComponent(new_hackpad_title.slice(0,8));
     var new_hackpad_id = Math.random().toString(36);
     var new_hackpad_url = "https://g0v.hackpad.com/" + new_hackpad_id;
-    var new_menu_item = '<a href="' + new_hackpad_url + '" target="_blank" class="link item"><i class="icon text file outline"></i>' + new_hackpad_title + '</a>';
+    var new_menu_item = '<a href="' + new_hackpad_url + '" target="iframe" class="link item"><i class="icon text file outline"></i>' + new_hackpad_title + '</a>';
     // add new hackpad info to foldr
     if (new_hackpad_title.length > 0) {
         $('#toc .ui.vertical.menu').append(new_menu_item);
@@ -603,7 +644,7 @@ $("#topbar .form .submit.add.only").on("click tap", function () {
     // validate url
     if (/^([a-z]([a-z]|\d|\+|-|\.)*):(\/\/(((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:)*@)?((\[(|(v[\da-f]{1,}\.(([a-z]|\d|-|\.|_|~)|[!\$&'\(\)\*\+,;=]|:)+))\])|((\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5])\.(\d|[1-9]\d|1\d\d|2[0-4]\d|25[0-5]))|(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=])*)(:\d*)?)(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*|(\/((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)?)|((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)+(\/(([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)*)*)|((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)){0})(\?((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|[\uE000-\uF8FF]|\/|\?)*)?(\#((([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(%[\da-f]{2})|[!\$&'\(\)\*\+,;=]|:|@)|\/|\?)*)?$/i.test(new_link_url) && new_link_title.length > 0) {
         $('#toc .ui.vertical.menu').append(
-            $('<a />', {href: new_link_url, 'target': '_blank', 'class': 'link item'})
+            $('<a />', {href: new_link_url, 'target': 'iframe', 'class': 'link item'})
                 .text(new_link_title)
                 .prepend($('<i class="icon url"></i>'))
         );
@@ -661,6 +702,13 @@ $("#sidebar").on("click tap", "a.link.item", function (event) {
 
     // when leaving ethercalc, show edit icon again
     if (event.target.target !== "_blank") {
+        if (isCanEdit()) {
+            $("#topbar .edit.table").show();
+        }
+        $("#topbar .refresh.table").hide();
+        $("#topbar .add.to.list").hide();
+        $("#topbar .submit.segment").hide();
+
         // reset page title
         $("title").text(
             $(this).contents().filter(function () {
@@ -691,6 +739,41 @@ $("#toc").on("click tap", "a.link.item", function () {
 $("#toc").on("click tap", ".header.item", function () {
     $(this).find('.icon.folder').toggle();
 });
+
+// when click on edit table button
+$("#topbar .edit.table").on("click tap", function () {
+    // Only sandstorm modifier can edit
+    if (!isCanEdit()) {
+        return;
+    }
+    // show sheet
+    if (!hide_sheet) {
+        $("#topbar .edit.table").attr("href", './sheet1');
+        // make foldr items sortable
+        if (sort_sheet) {
+            $("#toc .sortable").sortable(sort_action);
+        }
+        // RO - Don't change url since this is a sandstorm app
+        // // change url
+        // history.pushState(history_state,'', '/'+ethercalc_name+'/edit');
+        // change page title
+        $("title").text("編輯 | " + current_foldr_name + " | hackfoldr");
+        // inactive #toc items
+        $("#toc a.link.item").removeClass("active");
+    }
+    // switch icon
+    $("#topbar .edit.table").hide();
+    $("#topbar .refresh.table").show();
+    $("#topbar .add.to.list").show();
+});
+
+// RO - Remove href feature, not needed.
+// // add href attr to foldr title
+// $("#topbar .foldr.title").attr("href",'/'+ethercalc_name);
+
+// RO - Don't know why but the 更新 popup does not disappear. So I think it's better to disable it.
+// // enable popup
+// $('i.icon').popup();
 
 function isCanEdit() {
     if (typeof READ_ONLY === 'undefined') return true;
