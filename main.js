@@ -403,6 +403,11 @@
         }
     });
     this.get({
+        '/_viewonly': function(){
+            return sendFile('hackfoldr/view_only.html').call(this);
+        }
+    });
+    this.get({
         '/_hackfoldr': function(){
             // // Copy files
             // var sys = require('sys');

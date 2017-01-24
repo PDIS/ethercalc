@@ -162,6 +162,7 @@ opt/app/hackfoldr/sass
 opt/app/hackfoldr/sass/global.sass
 opt/app/hackfoldr/sass/index.html
 opt/app/hackfoldr/shortcuts-menu.html
+opt/app/hackfoldr/view_only.html
 opt/app/hackfoldr/white_label-shortcuts-dropdown.html
 opt/app/hackfoldr/white_label-shortcuts-nav.html
 opt/app/hackfoldr/white_label-shortcuts-topbar.html
@@ -675,7 +676,6 @@ opt/app/node_modules/zappajs/vendor/socket.io.js
 opt/app/player-broadcast.js
 opt/app/player-graph.js
 opt/app/player.js
-opt/app/sandstorm-integration/bin/getPublicId
 opt/app/sc.js
 opt/app/src
 opt/app/static/download.png

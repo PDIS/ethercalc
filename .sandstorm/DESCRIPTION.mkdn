@@ -1,9 +1,4 @@
-**EtherCalc is a web spreadsheet.**
+Linksholder is a document and bookmark collecting app, forked from Hackfoldr 2.0 (http://beta.hackfoldr.org/).
+You can organize links with folders or labels, and open them in a new tab with one click.
 
-Your data is saved on the web, and people can edit the same document at the
-same time. Everybody's changes are instantly reflected on all screens.
-
-Work together on inventories, survey forms, list management, brainstorming
-sessions and more!
-
-Read more about EtherCalc at: <http://ethercalc.net/>
+This app is currently only available in Traditional Chinese, but of course you can use it in any environment.
