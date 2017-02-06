@@ -496,8 +496,10 @@ var compile_json = function (rows) {
 var compile_ethercalc = function () {
     $.ajax('dump.json', {
         success: function (response) {
-            var csv = SocialCalc.ConvertSaveToOtherFormat(response, 'csv');
-            console.log('csv='+CSV.parse(csv));
+            var data = response['snapshot-sheet1'];
+            var parts = SocialCalc.SpreadsheetControlDecodeSpreadsheetSave("", data)
+            var save = data.substring(parts.sheet.start, parts.sheet.end)
+            var csv = SocialCalc.ConvertSaveToOtherFormat(save, 'csv');
             compile_json(CSV.parse(csv));
         }, error: function (error, textMessage, errorThrown) {
             console.log("error:"+textMessage);
@@ -506,7 +508,7 @@ var compile_ethercalc = function () {
     });
 };
 
-// load page~
+// load page
 compile_ethercalc();
 
 // setup history menu
