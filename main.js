@@ -418,8 +418,14 @@
             var fs = require('fs');
             exec("/opt/app/sandstorm-integration/bin/getPublicId " + this.request.get('X-Sandstorm-Session-Id'),
                 function (error, stdout, stderr) {
-                    exec("mkdir -p /var/www; cp -R /opt/app/hackfoldr_static/* /var/www/");
+                    var dir = '/var/www/linksholderbypass/' + grainId;
+                    exec("mkdir -p " + dir + "; cp -R /opt/app/hackfoldr_static/* " + dir + '/');
+                    var grainId = stdout.split('\n')[0];
                     publishUrl = stdout.split('\n')[2];
+                    // Remove grain id
+                    publishUrl = 'http://' + publishUrl.substring(publishUrl.indexOf(grainId) + grainId.length + 1);
+                    publishUrl += '/linksholderbypass/' + grainId + '/';
+                    console.log(publishUrl);
                     // Copy dump
                     exec("cp /var/dump.json /var/www/dump.json",
                         function (error, stdout, stderr) {
