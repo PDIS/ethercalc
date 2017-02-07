@@ -1,107 +1,20 @@
-# EtherCalc
+<pre>
+server {
+  listen 80;
+  server_name sand.g0v.link *.sand.g0v.link g0v.sandcats.io *.g0v.sandcats.io;
 
-* Overview: http://ethercalc.net/
-* 中文版: http://ethercalc.tw/
-* 简体中文: http://cn.ethercalc.net/
-* REST API: http://docs.ethercalc.apiary.io/
+  resolver 8.8.8.8;
+  proxy_redirect off;
+  set $proxy_to 'http://127.0.0.1:6080';
 
-* Language: [LiveScript](http://livescript.net/)
-* Runtime: [Node.js](http://nodejs.org/) (4.x preferred, should work with 0.8+)
-* Services: [Redis](http://redis.io) (2.4+; fall-back to on-disk JSON storage if not present)
-    * Multi-server is supported _only_ when running with Redis
-    * Note to Redis 2.2 users (e.g. on Ubuntu 12.04): Please disable the `timeout 300` setting in `/etc/redis.conf`, or upgrade to Redis 2.4+ if possible at all. For more details, see [#49](https://github.com/audreyt/ethercalc/issues/49#issuecomment-25331595).
-* Browsers tested: Safari, Chrome, Firefox, IE.
-* Integrated with content management systems:
-    * [Socialtext](http://www.socialtext.com/)
-    * [Drupal](https://drupal.org/project/sheetnode)
+  if ($host ~ '^lh\.(?<grain_host>.*)') {
+    set $proxy_to https://$grain_host;
+  }
 
-## Installation
-
-For global installation (may need root)
-
-    npm i -g ethercalc
-    ethercalc
-
-For local non-root installation
-
-    npm i
-    make
-
-Or install with our [Docker](http://www.docker.io/) image, which comes with
-support for webworker-threads:
-
-    # Install docker and docker-compose
-    sudo ./misc/linux-install-docker-and-compose.sh
-
-    # Run ethercalc on port 80 ( http://localhost/ )
-    docker-compose up -d
-
-Send email
-
-    Optional - Send email formulas requires OAuth2 & cron  e.g. =email(to, subject, body), =emailAt(time, to, subject, body)
-
-    OAuth2 - Set environment vars
-    1) Tutorial: follow the tutorial to get the 4 environment vars http://masashi-k.blogspot.com.au/2013/06/sending-mail-with-gmail-using-xoauth2.html
-    2) Set 4 environment vars - see [src/emailer.ls] vars: user, clientId, clientSecret, refreshToken
-    Tested using gmail, have not tested with other providors
-
-    Cron - Required for emailAt formulas.
-    See *curl* in [.openshift/cron/minutely/timetrigger] for openshift version (openshift](openshift.redhat.com)
-    The curl checks the database for unsent emails and updates the database after sending.
-
-## REST API
-
-Please see [API.md](https://github.com/audreyt/ethercalc/blob/master/API.md)
-for the API Blueprint, or [the online version at Apiary](http://docs.ethercalc.apiary.io/).
-
-## Runtime Flags
-
-### Listening Interface: `--host` / `--port`
-
-Specify a specific host and/or a different port for the service.
-
-By default EtherCalc listens at `0.0.0.0:8000` (all IPv4 interfaces).
-
-### Using SSL: `--keyfile` / `--certfile`
-
-    openssl genrsa -out ethercalc-key.pem 1024
-    openssl req -new -key ethercalc-key.pem -out certrequest.csr
-    openssl x509 -req -in certrequest.csr -signkey ethercalc-key.pem -out ethercalc-cert.pem
-    ethercalc --keyfile ethercalc-key.pem --certfile ethercalc-cert.pem
-
-### Prefers polling over Websocket: `--polling`
-
-Useful when running behind a proxy without WebSocket support.
-
-### Enable Cross-Origin Resource Sharing: `--cors`
-
-Useful when setting up EtherCalc as a public REST API server.
-
-### URL Prefix: `--basepath /path/prefix`
-
-Useful when running under an URL rewriter. If running with a nginx reverse
-proxy, please add this section:
-
-```
-    location /zappa/socket/__local/ {
-        rewrite (.*) /path/prefix$1;
-    }
-```
-
-
-### Access Control: `--key secret`
-
-Offers read-write vs. read-only modes. See issues [#1](https://github.com/audreyt/ethercalc/issues/1) and [#4](https://github.com/audreyt/ethercalc/issues/4) for details on setting this up.
-
-### Disable server-side WebWorkers: `--vm`
-
-Runs a single-thread background loop with `vm.createContext` instead of `webworker-threads`.
-
-Useful for running custom functions in server side that requires full VM access.
-
-### Expires inactive spreadsheets: `--expire 86400`
-
-Deletes a spreadsheet's content after N seconds of inactivity. Activities include accessing with REST API as well as Web UI, including moving the active cell cursor on an opened page.
+  location / {
+#    proxy_pass http://127.0.0.1:6080;
+    proxy_pass $proxy_to;
+</pre>
 
 # Licensing
 

@@ -418,18 +418,21 @@
             var fs = require('fs');
             exec("/opt/app/sandstorm-integration/bin/getPublicId " + this.request.get('X-Sandstorm-Session-Id'),
                 function (error, stdout, stderr) {
-                    var dir = '/var/www/linksholderbypass/' + grainId;
-                    exec("mkdir -p " + dir + "; cp -R /opt/app/hackfoldr_static/* " + dir + '/');
+                    exec("mkdir -p /var/www; cp -R /opt/app/hackfoldr_static/* /var/www/");
                     var grainId = stdout.split('\n')[0];
                     publishUrl = stdout.split('\n')[2];
-                    // Remove grain id
-                    publishUrl = 'http://' + publishUrl.substring(publishUrl.indexOf(grainId) + grainId.length + 1);
-                    publishUrl += '/linksholderbypass/' + grainId + '/';
-                    console.log(publishUrl);
+                    publishUrl = 'http://lh.' + publishUrl.substring(publishUrl.indexOf(grainId));
                     // Copy dump
                     exec("cp /var/dump.json /var/www/dump.json",
                         function (error, stdout, stderr) {
                         });
+                    // Make link
+                    var redirectHTML = '<html><meta http-equiv="refresh" content="0; url=/" /></html>';
+                    fs.writeFile("/var/www/linksholderbypass/" + grainId, redirectHTML, function(err) {
+                        if(err) {
+                            return console.log(err);
+                        }
+                    });
                 });
             return sendFile('hackfoldr_static/ok.html').call(this);
         }
