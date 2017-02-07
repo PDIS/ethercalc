@@ -1,3 +1,17 @@
+# Sandstorm nginx configure for external page mode
+
+Add these lines, then change your original proxy_pass in location / to `$proxy_to`. Then disable forwarding host header.
+<pre>
+  resolver 8.8.8.8;
+  proxy_redirect off;
+  set $proxy_to 'http://127.0.0.1:6080';
+
+  if ($host ~ '^lh\.(?<grain_host>.*)') {
+    set $proxy_to https://$grain_host;
+  }
+  </pre>
+
+Example:
 <pre>
 server {
   listen 80;
@@ -14,6 +28,10 @@ server {
   location / {
 #    proxy_pass http://127.0.0.1:6080;
     proxy_pass $proxy_to;
+    
+    # Forward the Host header, which is used to route requests for
+    # static content published from Sandstorm apps.
+#    proxy_set_header Host $http_host;
 </pre>
 
 # Licensing
