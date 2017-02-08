@@ -421,7 +421,8 @@
                     exec("mkdir -p /var/www; cp -R /opt/app/hackfoldr_static/* /var/www/");
                     var grainId = stdout.split('\n')[0];
                     publishUrl = stdout.split('\n')[2];
-                    publishUrl = 'http://lh.' + publishUrl.substring(publishUrl.indexOf(grainId));
+                    publishUrl = 'http://' + grainId + '.lh' + publishUrl.substring(publishUrl.indexOf(grainId)
+                        + grainId.length);
                     // Copy dump
                     exec("cp /var/dump.json /var/www/dump.json",
                         function (error, stdout, stderr) {
