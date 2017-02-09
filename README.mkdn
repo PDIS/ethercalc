@@ -4,18 +4,16 @@ Add these lines, change `<your domain>.sandcats.io` to your domain name.
 <pre>
 server {
   listen 80;
-  server_name *.lh.<your domain>.sandcats.io;
-
-  resolver 8.8.8.8;
+  server_name *.lh.ey.sandcats.io;
   proxy_redirect off;
 
   if ($host ~ '^(?<grain_id>.*)\.lh(?<grain_host>.*)') {
-    set $proxy_to https://$grain_id$grain_host;
+    set $proxy_host $grain_id$grain_host;
   }
 
   location / {
-    proxy_pass $proxy_to;
-
+    proxy_pass https://127.0.0.1:6080;
+    proxy_set_header Host $proxy_host;
   }
 }
 </pre>
