@@ -1,10 +1,10 @@
 # Sandstorm nginx reverse proxy configure for external page mode
 
-Add these lines, change `<your domain>.sandcats.io` to your domain name.
+Add these lines, change `[your domain].sandcats.io` to your domain name.
 <pre>
 server {
   listen 80;
-  server_name *.lh.ey.sandcats.io;
+  server_name *.lh.[your domain].sandcats.io;
   proxy_redirect off;
 
   if ($host ~ '^(?<grain_id>.*)\.lh(?<grain_host>.*)') {
