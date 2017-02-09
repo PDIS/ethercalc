@@ -7,7 +7,7 @@ server {
   server_name *.lh.[your domain].sandcats.io;
   proxy_redirect off;
 
-  if ($host ~ '^(?<grain_id>.*)\.lh(?<grain_host>.*)') {
+  if ($host ~ '^(?&lt;grain_id>.*)\.lh(?&lt;grain_host>.*)') {
     set $proxy_host $grain_id$grain_host;
   }
 
