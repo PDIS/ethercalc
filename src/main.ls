@@ -261,6 +261,9 @@
   @get '/:template/appeditor': sendFile \panels.html    
 
   @get '/:room/edit': ->
+    if @request.get(\x-sandstorm-permissions) isnt /modify/
+      @response.redirect "#BASEPATH/#{ @params.room }?auth=0"
+      return
     room = @params.room
     @response.redirect "#BASEPATH/#room?auth=#{ hmac room }"
   @get '/:room/view': ->
@@ -461,6 +464,7 @@
     | \my.ecell
       DB.hset "ecell-#room", user, ecell
     | \execute
+      return if @socket?handshake?headers['x-sandstorm-permissions'] isnt /modify/
       return if cmdstr is /^set sheet defaulttextvalueformat text-wiki\s*$/
       <~ DB.multi!
         .rpush "log-#room" cmdstr
@@ -523,14 +527,9 @@
       delete SC[room]
       {log, snapshot} <~ SC._get room, @io
       reply { type: \recalc, room, log, snapshot }
-    | \stopHuddle
-      return if @KEY and KEY isnt @KEY
-      <~ DB.del <[ audit log chat ecell snapshot ]>.map -> "#it-#room"
-      SC[room]?terminate!
-      delete SC[room]
-      broadcast @data
     | \ecell
       return if auth is \0 or KEY and auth isnt hmac room
       broadcast @data
     | otherwise
+      return if @socket?handshake?headers['x-sandstorm-permissions'] isnt /modify/
       broadcast @data

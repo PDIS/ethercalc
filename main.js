@@ -494,6 +494,10 @@
     this.get({
       '/:room/edit': function(){
         var room;
+        if (!/modify/.test(this.request.get('x-sandstorm-permissions'))) {
+          this.response.redirect(BASEPATH + "/" + this.params.room + "?auth=0");
+          return;
+        }
         room = this.params.room;
         return this.response.redirect(BASEPATH + "/" + room + "?auth=" + hmac(room));
       }
@@ -791,7 +795,7 @@
     });
     return this.on({
       data: function(){
-        var ref$, room, msg, user, ecell, cmdstr, type, auth, reply, broadcast, this$ = this;
+        var ref$, room, msg, user, ecell, cmdstr, type, auth, reply, broadcast, ref1$, ref2$, ref3$, ref4$, this$ = this;
         ref$ = this.data, room = ref$.room, msg = ref$.msg, user = ref$.user, ecell = ref$.ecell, cmdstr = ref$.cmdstr, type = ref$.type, auth = ref$.auth;
         room = (room + "").replace(/^_+/, '');
         if (EXPIRE) {
@@ -829,6 +833,9 @@
           DB.hset("ecell-" + room, user, ecell);
           break;
         case 'execute':
+          if (!/modify/.test((ref$ = this.socket) != null ? (ref1$ = ref$.handshake) != null ? ref1$.headers['x-sandstorm-permissions'] : void 8 : void 8)) {
+            return;
+          }
           if (/^set sheet defaulttextvalueformat text-wiki\s*$/.exec(cmdstr)) {
             return;
           }
@@ -921,8 +928,8 @@
           break;
         case 'ask.recalc':
           this.socket.join("recalc." + room);
-          if ((ref$ = SC[room]) != null) {
-            ref$.terminate();
+          if ((ref2$ = SC[room]) != null) {
+            ref2$.terminate();
           }
           delete SC[room];
           SC._get(room, this.io, function(arg$){
@@ -936,21 +943,6 @@
             });
           });
           break;
-        case 'stopHuddle':
-          if (this.KEY && KEY !== this.KEY) {
-            return;
-          }
-          DB.del(['audit', 'log', 'chat', 'ecell', 'snapshot'].map(function(it){
-            return it + "-" + room;
-          }), function(){
-            var ref$;
-            if ((ref$ = SC[room]) != null) {
-              ref$.terminate();
-            }
-            delete SC[room];
-            return broadcast(this$.data);
-          });
-          break;
         case 'ecell':
           if (auth === '0' || KEY && auth !== hmac(room)) {
             return;
@@ -958,6 +950,9 @@
           broadcast(this.data);
           break;
         default:
+          if (!/modify/.test((ref3$ = this.socket) != null ? (ref4$ = ref3$.handshake) != null ? ref4$.headers['x-sandstorm-permissions'] : void 8 : void 8)) {
+            return;
+          }
           broadcast(this.data);
         }
       }
