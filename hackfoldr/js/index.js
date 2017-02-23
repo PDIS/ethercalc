@@ -635,6 +635,7 @@ $('.ui.form')
         },
         new_link_url: {
             identifier: 'new-link-url',
+            optional: true,
             rules: [
                 {
                     type: 'url',
