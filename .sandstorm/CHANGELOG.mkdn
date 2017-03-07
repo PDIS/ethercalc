@@ -1,3 +1,8 @@
+# 2017.3.7
+
+- Make page load faster by removing dependency on SocialCalc.js (~1MB) and csv.js
+- Allow [+] button to create subfolder by not submitting URL
+
 # 2017.2.7
 
 - Make external page can passthrough http reverse proxy
