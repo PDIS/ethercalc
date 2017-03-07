@@ -497,10 +497,9 @@ var compile_ethercalc = function () {
     $.ajax('dump.json', {
         success: function (response) {
             var data = response['snapshot-sheet1'];
-            var parts = SocialCalc.SpreadsheetControlDecodeSpreadsheetSave("", data)
+            var parts = SpreadsheetControlDecodeSpreadsheetSave("", data)
             var save = data.substring(parts.sheet.start, parts.sheet.end)
-            var csv = SocialCalc.ConvertSaveToOtherFormat(save, 'csv');
-            compile_json(CSV.parse(csv));
+            compile_json(socialcalc_to_aoa(save));
         }, error: function (error, textMessage, errorThrown) {
             console.log("error:"+textMessage);
             console.log("error:"+errorThrown);
