@@ -100,6 +100,7 @@ function socialcalc_to_aoa(str, opts) {
           case 'nl': arr[R][C] = +record[4] ? true : false; break;
           default: arr[R][C] = +record[4]; break;
         } break;
+      case 'vt': arr[R][C] = record[4]; break;
     }
   }
   return arr;
