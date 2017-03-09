@@ -157,7 +157,7 @@
           };
           return this$.on({
             data: function(){
-              var ss, ref$, ref1$, editor, user, ref2$, ecell, peerClass, find, cr, cell, origCR, origCell, ref3$, parts, cmdstr, line, refreshCmd, sheetdata, ref4$;
+              var ss, ref$, ref1$, editor, user, ref2$, ecell, peerClass, find, cr, cell, origCR, origCell, ref3$, parts, cmdstr, line, refreshCmd, sheetdata;
               if (!((typeof SocialCalc != 'undefined' && SocialCalc !== null) && SocialCalc.isConnected)) {
                 return;
               }
@@ -333,11 +333,6 @@
                 break;
               case 'execute':
                 ss.context.sheetobj.ScheduleSheetCommands(this.data.cmdstr, this.data.saveundo, true);
-                if (ss.currentTab === ((ref4$ = ss.tabnums) != null ? ref4$.graph : void 8)) {
-                  setTimeout(function(){
-                    return window.DoGraph(false, false);
-                  }, 100);
-                }
                 break;
               case 'stopHuddle':
                 $('#content').uiDisable();
@@ -396,15 +391,11 @@
           return setTimeout(onReady, 1);
         });
         onLoad = function(ssInstance){
-          var ss, ref$, ref1$, ref2$, ref3$;
+          var ss, ref$;
           ssInstance == null && (ssInstance = SocialCalc.CurrentSpreadsheetControlObject);
           window.spreadsheet = ss = ssInstance || (SocialCalc._view || SocialCalc._app
             ? new SocialCalc.SpreadsheetViewer()
             : new SocialCalc.SpreadsheetControl());
-          if (window.GraphOnClick == null) {
-            SocialCalc.Callbacks.broadcast('ask.log');
-            return;
-          }
           ss.ExportCallback = function(s){
             return alert(SocialCalc.ConvertSaveToOtherFormat(SocialCalc.Clipboard.clipboard, "csv"));
           };
@@ -421,33 +412,6 @@
               onclick: null,
               onclickFocus: true
             });
-          }
-          if (ss.tabs) {
-            ss.tabnums.graph = ss.tabs.length;
-          }
-          if ((ref1$ = ss.tabs) != null) {
-            ref1$.push({
-              name: 'graph',
-              text: SocialCalc.Constants.s_loc_graph,
-              html: "<div id=\"%id.graphtools\" style=\"display:none;\"><div style=\"%tbt.\"><table cellspacing=\"0\" cellpadding=\"0\"><tr><td style=\"vertical-align:middle;padding-right:32px;padding-left:16px;\"><div style=\"%tbt.\">Cells to Graph</div><div id=\"%id.graphrange\" style=\"font-weight:bold;\">Not Set</div></td><td style=\"vertical-align:top;padding-right:32px;\"><div style=\"%tbt.\">Set Cells To Graph</div><select id=\"%id.graphlist\" size=\"1\" onfocus=\"%s.CmdGotFocus(this);\"><option selected>[select range]</option><option>Select all</option></select></td><td style=\"vertical-align:middle;padding-right:4px;\"><div style=\"%tbt.\">Graph Type</div><select id=\"%id.graphtype\" size=\"1\" onchange=\"window.GraphChanged(this);\" onfocus=\"%s.CmdGotFocus(this);\"></select><input type=\"button\" value=\"OK\" onclick=\"window.GraphSetCells();\" style=\"font-size:x-small;\"></div></td><td style=\"vertical-align:middle;padding-right:16px;\"><div style=\"%tbt.\">&nbsp;</div><input id=\"%id.graphhelp\" type=\"button\" onclick=\"DoGraph(true);\" value=\"Help\" style=\"font-size:x-small;\"></div></td><td style=\"vertical-align:middle;padding-right:16px;\">Min X <input id=\"%id.graphMinX\" onchange=\"window.MinMaxChanged(this,0);\" onfocus=\"%s.CmdGotFocus(this);\" size=5/>Max X <input id=\"%id.graphMaxX\" onchange=\"window.MinMaxChanged(this,1);\" onfocus=\"%s.CmdGotFocus(this);\" size=5/><br/>Min Y <input id=\"%id.graphMinY\" onchange=\"window.MinMaxChanged(this,2);\" onfocus=\"%s.CmdGotFocus(this);\" size=5/>Max Y <input id=\"%id.graphMaxY\" onchange=\"window.MinMaxChanged(this,3);\" onfocus=\"%s.CmdGotFocus(this);\" size=5/></div></td></tr></table></div></div>",
-              view: 'graph',
-              onclick: window.GraphOnClick,
-              onclickFocus: true
-            });
-          }
-          if ((ref2$ = ss.views) != null) {
-            ref2$.graph = {
-              name: 'graph',
-              divStyle: "overflow:auto;",
-              values: {},
-              html: '<div style="padding:6px;">Graph View</div>'
-            };
-          }
-          if ((ref3$ = ss.editor) != null) {
-            ref3$.SettingsCallbacks.graph = {
-              save: window.GraphSave,
-              load: window.GraphLoad
-            };
           }
           ss.sheet.cells["A1"] = new SocialCalc.Cell("A1");
           ss.sheet.cells["A1"].displaystring = '<div class="loader"></div>';

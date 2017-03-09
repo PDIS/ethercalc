@@ -194,10 +194,6 @@
           SocialCalc.RecalcLoadedSheet @data.room, '', true
       | \execute
         ss.context.sheetobj.ScheduleSheetCommands @data.cmdstr, @data.saveundo, true
-        if ss.currentTab is ss.tabnums?graph
-          setTimeout do
-            -> window.DoGraph false false
-            100ms
       | \stopHuddle
         $(\#content)uiDisable!
         alert """
@@ -241,12 +237,6 @@ Check the activity stream to see the newly edited page!
         new SocialCalc.SpreadsheetControl!
     )
     
-    # eddy {
-    if !window.GraphOnClick?
-      SocialCalc.Callbacks.broadcast \ask.log 
-      return 
-    # } eddy       
-
     ss.ExportCallback = (s) ->
       alert SocialCalc.ConvertSaveToOtherFormat(SocialCalc.Clipboard.clipboard, "csv")
 
@@ -268,27 +258,6 @@ Check the activity stream to see the newly edited page!
       onclick: null
       onclickFocus: true  
     # }
-
-    ss.tabnums.graph = ss.tabs.length if ss.tabs
-    ss.tabs?push do
-      name: \graph
-      text: SocialCalc.Constants.s_loc_graph
-      html: """
-        <div id="%id.graphtools" style="display:none;"><div style="%tbt."><table cellspacing="0" cellpadding="0"><tr><td style="vertical-align:middle;padding-right:32px;padding-left:16px;"><div style="%tbt.">Cells to Graph</div><div id="%id.graphrange" style="font-weight:bold;">Not Set</div></td><td style="vertical-align:top;padding-right:32px;"><div style="%tbt.">Set Cells To Graph</div><select id="%id.graphlist" size="1" onfocus="%s.CmdGotFocus(this);"><option selected>[select range]</option><option>Select all</option></select></td><td style="vertical-align:middle;padding-right:4px;"><div style="%tbt.">Graph Type</div><select id="%id.graphtype" size="1" onchange="window.GraphChanged(this);" onfocus="%s.CmdGotFocus(this);"></select><input type="button" value="OK" onclick="window.GraphSetCells();" style="font-size:x-small;"></div></td><td style="vertical-align:middle;padding-right:16px;"><div style="%tbt.">&nbsp;</div><input id="%id.graphhelp" type="button" onclick="DoGraph(true);" value="Help" style="font-size:x-small;"></div></td><td style="vertical-align:middle;padding-right:16px;">Min X <input id="%id.graphMinX" onchange="window.MinMaxChanged(this,0);" onfocus="%s.CmdGotFocus(this);" size=5/>Max X <input id="%id.graphMaxX" onchange="window.MinMaxChanged(this,1);" onfocus="%s.CmdGotFocus(this);" size=5/><br/>Min Y <input id="%id.graphMinY" onchange="window.MinMaxChanged(this,2);" onfocus="%s.CmdGotFocus(this);" size=5/>Max Y <input id="%id.graphMaxY" onchange="window.MinMaxChanged(this,3);" onfocus="%s.CmdGotFocus(this);" size=5/></div></td></tr></table></div></div>
-      """
-      view: \graph
-      onclick: window.GraphOnClick
-      onclickFocus: true
-
-    ss.views?graph =
-      name: \graph
-      divStyle: "overflow:auto;"
-      values: {}
-      html: '<div style="padding:6px;">Graph View</div>'
-
-    ss.editor?SettingsCallbacks.graph =
-      save: window.GraphSave
-      load: window.GraphLoad
 
     # Spinner - shows when sheet data is loading
     ss.sheet.cells["A1"] = new SocialCalc.Cell("A1")
